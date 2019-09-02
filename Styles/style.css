@@ -3,3 +3,57 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Input focus state */
+
+input:focus {
+    color: rgb(179, 112, 255);
+    background-color: rgb(233, 233, 233);
+}
+
+/* Header Styling */
+
+header {
+    background-color: rgb(82, 82, 82);
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    color: white;
+}
+
+/* "Sub-header" Styling */
+
+.sub-header {
+    text-align: center;
+}
+
+.sub-header h2 {
+    color: rgb(82, 82, 82);
+}
+
+.sub-header p {
+    color: rgb(150, 150, 150);
+}
+
+/* General Fieldset Styling */
+
+fieldset {
+    border: none;
+}
+
+fieldset
+
+/* Contact Section Styling */
+
+#contact-section label {
+    display: block;
+    color: rgb(100, 100, 100);
+}
+
+#contact-section input {
+    width: 90%;
+    border-radius: 5px;
+    margin: 15px auto;
+}

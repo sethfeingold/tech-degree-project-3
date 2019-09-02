@@ -15,13 +15,15 @@
     <header>
         <h1>The Code Review</h1>
     </header>
-    <hr>
 
     <!-- Title/webform description -->
 
-    <h2>Signup for our newsletter</h2>
+    <div class="sub-header">
+        <h2>Signup for our newsletter</h2>
 
-    <p>Get the latest news on how your code is doing right in your inbox</p>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+
     <hr>
 
     <!-- Start of actual webform -->
@@ -31,7 +33,7 @@
 
         <!-- Contact information section -->
 
-        <fieldset>                  
+        <fieldset id="contact-section">                  
             <legend class="form-title">Contact Information</legend>
 
             <!-- Name -->
@@ -62,7 +64,7 @@
             <label for="city">City</label>
             <input type="text" id="city" name="user_city">
             <br>
-            
+
             <!-- State -->
 
             <label for="state">State</label>
@@ -131,14 +133,30 @@
 
         <fieldset>
             <legend class="form-title">Newsletter</legend>
-    
-        </fieldset>
 
+            <!-- Newsletter options -->
+
+            <p>Select the newsletters you would like to receive</p>
+            <input type="checkbox" name="newsletter_option" value="html-news" id="html-news"><label for="html-news"> HTML News</label><br>
+            <input type="checkbox" name="newsletter_option" value="css-news" id="css-news"><label for="css-news"> CSS News</label><br>
+            <input type="checkbox" name="newsletter_option" value="javascript-news" id="javascript-news"><label for="javascript-news"> Javascript News</label>
+
+            <!-- Newsletter format preferences -->
+
+            <p>Newsletter Format</p>
+            <input type="radio" name="newsletter_format" value="html-newsletter" id="html-newsletter"><label for="html-newsletter"> HTML</label> <br>
+            <input type="radio" name="newsletter_format" value="plain-text-newsletter" id="plain-text-newsletter"><label for="plain-text-newsletter"> Plain Text</label> <br>
+
+            <p><label for="user-topics">Other topics you'd like to hear about</label></p>
+            <textarea id="user-topics" name="user_topics" placeholder="What are your other coding interests? Let us know!"></textarea>
+        </fieldset>
+    <button type="submit">Sign Up</button>
     </form>
 
+    <!-- Footer/copyright section -->
 
-
-
-
+    <footer>
+        <small><em>&copy; Copyright The Code Review</em></small>
+    </footer>
 </body>
 </html>
