@@ -4,11 +4,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+h2 {
+    color: rgb(82, 82, 82);
+}
+
+
 /* Input focus state */
 
 input:focus {
-    color: rgb(179, 112, 255);
-    background-color: rgb(233, 233, 233);
+    outline: 0;    
+    border-bottom: 2px solid rgb(225, 117, 252);
+    border-right: 2px solid rgb(225, 117, 252);
 }
 
 /* Header Styling */
@@ -26,11 +32,9 @@ header h1 {
 /* "Sub-header" Styling */
 
 .sub-header {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-}
-
-.sub-header h2 {
-    color: rgb(82, 82, 82);
 }
 
 .sub-header p {
@@ -43,17 +47,39 @@ fieldset {
     border: none;
 }
 
-fieldset
-
 /* Contact Section Styling */
 
 #contact-section label {
     display: block;
-    color: rgb(100, 100, 100);
+    color: rgb(150, 150, 150);
 }
 
 #contact-section input {
     width: 90%;
     border-radius: 5px;
     margin: 15px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: rgb(230, 230, 230); 
+    border-width: 0;
+    box-shadow: 1px 1px 4px rgb(200, 200, 200);
 }
+
+input::placeholder {
+    text-align: right;
+    padding-right: 10px;
+    font-style: italic;
+    color: rgb(200, 200, 200);
+}
+
+select {
+    border-radius: 5px;
+    margin: 15px auto;
+    box-shadow: 1px 1px 4px rgb(200, 200, 200);
+    height: 35px;
+    width: 90%;
+}
+
+/* Newsletter Section Styling */
+
