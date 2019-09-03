@@ -16,9 +16,11 @@ h2 {
 /* Header Styling */
 
 header {
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(150, 150, 150);
     text-align: center;
     padding: 10px;
+    box-shadow: 2px 2px 4px rgb(82, 82, 82);
+    border-radius: 5px;
 }
 
 header h1 {
