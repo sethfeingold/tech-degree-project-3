@@ -13,15 +13,6 @@ h2 {
     color: rgb(82, 82, 82);
 }
 
-
-/* Input focus state */
-
-input:focus {
-    outline: 0;    
-    border-bottom: 2px solid rgb(225, 117, 252);
-    border-right: 2px solid rgb(225, 117, 252);
-}
-
 /* Header Styling */
 
 header {
@@ -67,8 +58,13 @@ fieldset {
     padding-bottom: 10px;
     background-color: rgb(230, 230, 230); 
     border-width: 0;
-    box-shadow: 1px 1px 4px rgb(200, 200, 200);
+    box-shadow: 2px 2px 4px rgb(200, 200, 200);
     text-indent: 20px;
+}
+
+#contact-section input:focus, #contact-section select:focus {
+    outline: none;
+    box-shadow: 2px 2px 4px rgb(240, 180, 255);
 }
 
 input::placeholder {
@@ -106,6 +102,10 @@ select {
 
 /* Textarea Styling */
 
+#other-topics {
+    margin-top: 30px;
+}
+
 textarea {
     border-radius: 5px;
     border: 1px solid rgb(240, 180, 255);
@@ -114,6 +114,12 @@ textarea {
     display: block;
     background-color: rgb(240, 240, 240);
     margin: 0 auto;
+    box-shadow: 2px 2px 4px rgb(200, 200, 200);
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 2px 2px 4px rgb(240, 180, 255);
 }
 
 /* Submit Button Styling */
@@ -145,3 +151,27 @@ footer {
 }
 
 /* Media Queries */
+
+@media (min-width: 768px) {
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+
+    .flex-container {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       max-width: 1000px;
+       margin: 15px auto;
+    }
+
+    #contact-section input, select {
+        width: 70%;
+        margin-right: 10px;
+    }
+}
