@@ -13,6 +13,16 @@ h2 {
     color: rgb(82, 82, 82);
 }
 
+legend {
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    padding-top: 10px;
+}
+
+
 /* Header Styling */
 
 header {
