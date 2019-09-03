@@ -4,6 +4,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+hr {
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+}
+
 h2 {
     color: rgb(82, 82, 82);
 }
@@ -60,10 +65,10 @@ fieldset {
     margin: 15px auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
     background-color: rgb(230, 230, 230); 
     border-width: 0;
     box-shadow: 1px 1px 4px rgb(200, 200, 200);
+    text-indent: 20px;
 }
 
 input::placeholder {
@@ -79,7 +84,63 @@ select {
     box-shadow: 1px 1px 4px rgb(200, 200, 200);
     height: 35px;
     width: 90%;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    color: rgb(100, 100, 100);
+    padding-left: 20px;
 }
 
 /* Newsletter Section Styling */
 
+#newsletter-section {
+    margin: 0 auto;
+}
+
+#newsletter-section p {
+    color: rgb(150, 150, 150);
+}
+
+#newsletter-section label {
+    color: rgb(100, 100, 100);
+}
+
+/* Textarea Styling */
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(240, 180, 255);
+    width: 90%;
+    height: 150px;
+    display: block;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+}
+
+/* Submit Button Styling */
+
+button {
+    width: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    outline: none;
+    box-shadow: 1px 1px 3px rgb(200, 200, 200);
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+    transition: 0.3s ease-out;
+}
+
+button:hover {
+    background-color: rgb(240, 180, 255);
+    color: rgb(255, 255, 255);
+}
+
+/* Footer Styling */
+
+footer {
+    text-align: center;
+    color: rgb(150, 150, 150);
+}
+
+/* Media Queries */
