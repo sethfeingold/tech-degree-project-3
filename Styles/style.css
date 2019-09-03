@@ -39,6 +39,10 @@ header h1 {
 
 /* General Fieldset Styling */
 
+.section-wrapper {
+    background-color: rgb(245, 245, 245);
+}
+
 fieldset {
     border: none;
 }
@@ -65,6 +69,7 @@ fieldset {
 #contact-section input:focus, #contact-section select:focus {
     outline: none;
     box-shadow: 2px 2px 4px rgb(240, 180, 255);
+    transition: 0.3s;
 }
 
 input::placeholder {
@@ -104,6 +109,7 @@ select {
 
 #other-topics {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 textarea {
@@ -120,6 +126,7 @@ textarea {
 textarea:focus {
     outline: none;
     box-shadow: 2px 2px 4px rgb(240, 180, 255);
+    transition: 0.3s;
 }
 
 /* Submit Button Styling */
